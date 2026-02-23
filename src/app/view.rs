@@ -1,9 +1,9 @@
-use super::{AppModel, Message, icons};
+use super::{icons, AppModel, Message};
 use crate::fl;
 use crate::services::clipboard;
 use cosmic::applet::menu_button;
 use cosmic::iced::widget::image::Handle as ImageHandle;
-use cosmic::iced::{Alignment, Length, window::Id};
+use cosmic::iced::{window::Id, Alignment, Length};
 use cosmic::prelude::*;
 use cosmic::widget;
 
