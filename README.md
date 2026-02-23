@@ -17,13 +17,11 @@ Main features:
 ## Dependencies
 
 - Wayland clipboard support (via `wl-clipboard-rs`)
-- Build dependencies for libcosmic on Debian-based systems:
-  - cargo
-  - just
-  - pkg-config
-  - libxkbcommon-dev
-  - libwayland-dev
-  - libgl1-mesa-dev
+- Build dependencies for libcosmic:
+
+```bash
+sudo apt install cargo cmake just libexpat1-dev libfontconfig-dev libfreetype-dev libxkbcommon-dev pkgconf
+```
 
 ## Build
 
