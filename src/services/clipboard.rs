@@ -8,7 +8,7 @@ use wl_clipboard_rs::{
 };
 
 const MAX_IMAGE_BYTES: usize = 8 * 1024 * 1024;
-const THUMBNAIL_SIZE_PX: u32 = 40;
+const THUMBNAIL_SIZE_PX: u32 = 400;
 
 #[derive(Debug, Clone)]
 pub enum ClipboardEntry {

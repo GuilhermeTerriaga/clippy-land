@@ -13,12 +13,12 @@ fn svg_icon(bytes: &'static [u8], fg: &str) -> widget::icon::Handle {
     widget::icon::from_svg_bytes(svg.into_bytes())
 }
 
-pub fn remove_icon() -> widget::icon::Handle {
-    svg_icon(REMOVE_SVG, "#dcdcdc")
+pub fn remove_icon(color: &str) -> widget::icon::Handle {
+    svg_icon(REMOVE_SVG, color)
 }
 
-pub fn pin_icon() -> widget::icon::Handle {
-    svg_icon(PIN_SVG, "#dcdcdc")
+pub fn pin_icon(color: &str) -> widget::icon::Handle {
+    svg_icon(PIN_SVG, color)
 }
 
 pub fn pin_icon_pinned() -> widget::icon::Handle {

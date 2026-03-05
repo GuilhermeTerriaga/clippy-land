@@ -127,6 +127,9 @@ pub fn update(app: &mut AppModel, message: Message) -> Task<cosmic::Action<Messa
         Message::ClearHistory => {
             app.history.clear();
         }
+        Message::HoverEntry(opt) => {
+            app.hovered_index = opt;
+        }
         Message::TogglePopup => {
             return if let Some(p) = app.popup.take() {
                 destroy_popup(p)
@@ -146,6 +149,8 @@ pub fn update(app: &mut AppModel, message: Message) -> Task<cosmic::Action<Messa
         Message::PopupClosed(id) => {
             if app.popup.as_ref() == Some(&id) {
                 app.popup = None;
+                app.hovered_index = None;
+                app.at_scroll_bottom = false;
             }
         }
     }

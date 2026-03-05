@@ -11,4 +11,5 @@ pub enum Message {
     RemoveHistory(usize),
     ClearHistory,
     CopyFromHistory(usize),
+    HoverEntry(Option<usize>),
 }
